@@ -1,0 +1,23 @@
+﻿@model Bloggie.Web.Models.ViewModels.EditForRequest
+@{
+}
+
+<h1>Update Tags</h1>
+<div class="container py-5">
+    <form method="post">
+        <div class="mb-3">
+            <label class="form-label">Name </label>
+            <input class="form-control" type="text" id="name" asp-for="Name" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Display name</label>
+            <input class="form-control" type="text" id="displayName" asp-for="DisplayName" />
+            <input class="form-control" type="text" id="id" asp-for="Id" hidden />
+        </div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-dark">Update</button>
+        </div>
+
+    </form>
+
+</div>
